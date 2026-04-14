@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Financial Fraud Detection & Risk Intelligence</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">FinSecure AI</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#dashboard">Dashboard</a></li>
+                <li><a href="#analytics">Analytics</a></li>
+                <li><a href="#alerts">Alerts</a></li>
+                <li><a href="#about">About</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>AI-Powered Financial Fraud Detection</h1>
+            <p>Real-time Risk Intelligence & Anomaly Detection System</p>
+            <button class="cta-btn" onclick="scrollToSection('dashboard')">View Dashboard</button>
+        </div>
+    </section>
+
+    <!-- Dashboard Section -->
+    <section id="dashboard" class="dashboard-section">
+        <div class="container">
+            <h2>Real-Time Risk Dashboard</h2>
+            
+            <!-- KPI Cards -->
+            <div class="kpi-container">
+                <div class="kpi-card">
+                    <h3>Total Transactions</h3>
+                    <div class="kpi-value">2.4M</div>
+                    <div class="kpi-change positive">↑ 12.5%</div>
+                </div>
+                <div class="kpi-card">
+                    <h3>Fraud Detected</h3>
+                    <div class="kpi-value">847</div>
+                    <div class="kpi-change negative">↑ 3.2%</div>
+                </div>
+                <div class="kpi-card">
+                    <h3>Risk Score</h3>
+                    <div class="kpi-value">42</div>
+                    <div class="kpi-change">/ 100</div>
+                </div>
+                <div class="kpi-card">
+                    <h3>Detection Rate</h3>
+                    <div class="kpi-value">94.8%</div>
+                    <div class="kpi-change positive">↑ 2.1%</div>
+                </div>
+            </div>
+
+            <!-- Power BI Embed Placeholder -->
+            <div class="powerbi-container">
+                <h3>Fraud Pattern Analysis</h3>
+                <iframe title="Fraud Detection Analytics" 
+                    src="https://app.powerbi.com/reportEmbed?reportId=YOUR_REPORT_ID&autoAuth=true&ctid=YOUR_TENANT_ID"
+                    frameborder="0" 
+                    allowFullScreen="true">
+                </iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Analytics Section -->
+    <section id="analytics" class="analytics-section">
+        <div class="container">
+            <h2>Risk Analytics</h2>
+            <div class="analytics-grid">
+                <div class="chart-card">
+                    <h3>Transaction Risk Distribution</h3>
+                    <canvas id="riskChart"></canvas>
+                </div>
+                <div class="chart-card">
+                    <h3>Hourly Fraud Attempts</h3>
+                    <canvas id="fraudChart"></canvas>
+                </div>
+                <div class="chart-card">
+                    <h3>Geographic Risk Heatmap</h3>
+                    <div class="heatmap-placeholder">Geographic Distribution Analysis</div>
+                </div>
+                <div class="chart-card">
+                    <h3>ML Model Performance</h3>
+                    <canvas id="performanceChart"></canvas>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Alerts Section -->
+    <section id="alerts" class="alerts-section">
+        <div class="container">
+            <h2>Active Alerts</h2>
+            <div class="alerts-list">
+                <div class="alert alert-high">
+                    <span class="alert-badge">High</span>
+                    <div class="alert-content">
+                        <h4>Suspicious Bulk Transfer Detected</h4>
+                        <p>Multiple high-value transfers from account #***4521 in 2 minutes</p>
+                        <small>2 minutes ago</small>
+                    </div>
+                </div>
+                <div class="alert alert-medium">
+                    <span class="alert-badge">Medium</span>
+                    <div class="alert-content">
+                        <h4>Unusual Geographic Location</h4>
+                        <p>Login attempt from new location: Singapore</p>
+                        <small>15 minutes ago</small>
+                    </div>
+                </div>
+                <div class="alert alert-low">
+                    <span class="alert-badge">Low</span>
+                    <div class="alert-content">
+                        <h4>Pattern Anomaly Detected</h4>
+                        <p>Transaction pattern differs from historical baseline</p>
+                        <small>1 hour ago</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <h2>About This System</h2>
+            <div class="about-content">
+                <p>Our AI-powered fraud detection system utilizes machine learning algorithms and real-time data analysis to identify and prevent financial fraud before it happens.</p>
+                <h3>Key Features:</h3>
+                <ul>
+                    <li>✓ Real-time transaction monitoring</li>
+                    <li>✓ Advanced anomaly detection</li>
+                    <li>✓ Geographic risk assessment</li>
+                    <li>✓ ML-based predictive alerts</li>
+                    <li>✓ Comprehensive audit trails</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2026 FinSecure AI. All rights reserved. | Powered by Power BI & Machine Learning</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
