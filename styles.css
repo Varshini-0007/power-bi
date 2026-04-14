@@ -1,0 +1,94 @@
+/* CSS Variables */
+:root {
+    --primary-color: #4CAF50;
+    --secondary-color: #f44336;
+    --background-color: #f4f4f4;
+    --text-color: #333;
+    --font-family: 'Arial', sans-serif;
+}
+
+/* Navigation */
+nav {
+    background-color: var(--primary-color);
+    padding: 1rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+/* Hero Section */
+.hero {
+    background-image: url('hero-image.jpg');
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+}
+
+/* KPI Cards */
+.kpi-card {
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    padding: 20px;
+    margin: 20px;
+    text-align: center;
+}
+
+/* Power BI Container */
+.power-bi-container {
+    margin: 20px;
+    padding: 20px;
+    background-color: white;
+    border: 1px solid #ddd;
+}
+
+/* Analytics Section */
+.analytics {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+/* Alerts Section */
+.alerts {
+    background-color: #ffe0b2;
+    padding: 15px;
+    margin: 20px 0;
+    border-left: 5px solid var(--secondary-color);
+}
+
+/* About Section */
+.about {
+    text-align: center;
+    padding: 40px;
+}
+
+/* Footer */
+footer {
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .kpi-card {
+        flex: 1 1 45%;
+    }
+    .analytics {
+        flex-direction: column;
+    }
+}
